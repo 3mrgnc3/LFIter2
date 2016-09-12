@@ -5,22 +5,23 @@
     attacks.                                                           
                                                                        
     I created this tool to automatically extract a list of known        
-    interesting files based on a wordlist.                             
+    interesting files based on a wordlist and be able to bruteforce
+    usernames on an affected system [still to do :P].                             
                                                                        
        FEATURES:
        
         1. Support For Multiple Server Types.
         2. Print Remote Files in local Terminal.
-        3. Batch Extract Files Using A Word list.
-        4. Brute Force Usernames Using A Word list [TO DO!]             
+        3. Batch Extract Files Using A Wordlist.
+        4. Brute Force Usernames Using A Wordlist. [TO DO!]             
                                                                        
     I hope others may find this usefull during pentests. I have 
-    chosen to use subprocess to call curl to perform the get request. 
-    I Initially tried to ue python-requests and liburl, but was 
+    chosen to use subprocess to call curl to perform web requests. 
+    I Initially tried to use python-requests and libcurl, but was 
     having major issues getting self signed certs for https & socks 
     proxies working using these. 
                                                                       
-    curl just works :D As long as its installed and working you 
+    Curl just works :D As long as its installed and working you 
     should be able to run this script.
                                                                        
     Collected Files Are Saved In the ./[host-ip]-files/ Directory      
