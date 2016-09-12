@@ -2,7 +2,6 @@
 ### LFIter2 Local File Include (LFI) MultiTool - Auto File Extractor &amp; Username Bruteforcer
 <p><center><img src="https://raw.githubusercontent.com/3mrgnc3/LFIter2/master/lfiter2.png" alt="SCREENSHOT""></center></p>
 
-<script type="text/javascript" src="https://asciinema.org/a/arr98z06veopifesnnrybd1li.js" id="asciicast-arr98z06veopifesnnrybd1li" async></script>
 
     Many Web Servers are vulnerable to remote directory traversal      
     attacks.                                                           
@@ -45,3 +44,5 @@
     lfitr2.py 172.16.10.1 -list win-paths.txt -port 8008               
     lfitr2.py 172.16.10.1 -path /BOOT.INI -out /root/report/host       
     ==============================================================                                                                          
+### Asciinema Demo
+[![asciicast](https://asciinema.org/a/arr98z06veopifesnnrybd1li.png)](https://asciinema.org/a/arr98z06veopifesnnrybd1li)
