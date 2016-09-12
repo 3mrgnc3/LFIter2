@@ -1,5 +1,6 @@
 # LFIter2 (Currently in Alpha)
 ### LFIter2 Local File Include (LFI) MultiTool - Auto File Extractor &amp; Username Bruteforcer
+<p><center><img src="https://raw.githubusercontent.com/3mrgnc3/LFIter2/master/lfiter2.png" alt="SCREENSHOT""></center></p>
 
     Many Web Servers are vulnerable to remote directory traversal      
     attacks.                                                           
