@@ -1,11 +1,10 @@
 # LFIter2 (Currently in Alpha)
-LFIter2 Local File Include (LFI) Tool - Auto File Extractor &amp; Username Bruteforcer
+### LFIter2 Local File Include (LFI) Tool - Auto File Extractor &amp; Username Bruteforcer
 
-                                                                   .
     Many Web Servers are vulnerable to remote directory traversal      
     attacks.                                                           
                                                                        
-    I created this tool to automaticaly extract a list of known        
+    I created this tool to automatically extract a list of known        
     interesting files based on a wordlist.                             
                                                                        
        FEATURES:                                                       
@@ -13,8 +12,14 @@ LFIter2 Local File Include (LFI) Tool - Auto File Extractor &amp; Username Brute
            2. Search For & Extract Files Using A Wordlist              
            3. Brute Force Usernames Using A Wordlist                   
                                                                        
-    I hope others may find this usefull. I have chosen to use          
-    subprocess to call curl to perform the                             
+    I hope others may find this usefull during pentests. I have 
+    chosen to use subprocess to call curl to perform the get request. 
+    I Initially tried to ue python-requests and liburl, but was 
+    having major issues getting self signed certs for https & socks 
+    proxies working using these. 
+                                                                      
+    curl just works :D Als long as its installed and working should 
+    be able to run this script.
                                                                        
     Collected Files Are Saved In the ./[host-ip]-files/ Directory      
     --------------------------------------------------------------            
