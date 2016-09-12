@@ -29,8 +29,9 @@
                                                                        
     TARGETS: (-trgt)                                                   
                                                                        
-         [zervit = Zervit 0.4 for Windows]                             
-         [cuppa  = CUPPA CMS vb.0..1 for FreeBSD]                      
+        [ zervit = Zervit 0.4 for Windows ]
+        [ cuppa  = CUPPA CMS vb.0..1 for FreeBSD ]
+        [ wbm128 = Webmin 1.28 for Fedora Core 4 ]                     
 
     ===Examples===================================================     
     lfitr2.py 172.16.10.1 -list win-paths.txt                          
