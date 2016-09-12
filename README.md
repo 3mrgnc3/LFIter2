@@ -7,10 +7,12 @@
     I created this tool to automatically extract a list of known        
     interesting files based on a wordlist.                             
                                                                        
-       FEATURES:                                                       
-           1. Print Remote Files in local Terminal                     
-           2. Search For & Extract Files Using A Wordlist              
-           3. Brute Force Usernames Using A Wordlist                   
+       FEATURES:
+       
+        1. Support For Multiple Server Types.
+        2. Print Remote Files in local Terminal.
+        3. Batch Extract Files Using A Word list.
+        4. Brute Force Usernames Using A Word list [TO DO!]             
                                                                        
     I hope others may find this usefull during pentests. I have 
     chosen to use subprocess to call curl to perform the get request. 
