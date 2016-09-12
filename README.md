@@ -18,8 +18,8 @@
     having major issues getting self signed certs for https & socks 
     proxies working using these. 
                                                                       
-    curl just works :D Als long as its installed and working should 
-    be able to run this script.
+    curl just works :D As long as its installed and working you 
+    should be able to run this script.
                                                                        
     Collected Files Are Saved In the ./[host-ip]-files/ Directory      
     --------------------------------------------------------------            
