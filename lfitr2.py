@@ -51,7 +51,7 @@ def targets(name=None):
         [ zervit = Zervit 0.4 for Windows ]
         [ cuppa  = CUPPA CMS vb.0..1 for FreeBSD ]
         [ wbm128 = Webmin 1.28 for Fedora Core 4 ]
-        [ iweb = Ashley Brown iWeb Server for Windows ]
+        [ iweb   = Ashley Brown iWeb Server for Windows ]
     ''','white')
 pars = argparse.ArgumentParser(description="", usage=banner())
 pars.add_argument('ip', nargs='+', help='Target IP Address')
